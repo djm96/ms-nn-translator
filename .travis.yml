@@ -1,0 +1,15 @@
+language: python
+python:
+  - 2.6
+  - 2.7
+  - 3.4
+  - 3.5
+  - 3.6-dev
+install:
+  - python setup.py install
+  - pip install nose
+  - if [[ $TRAVIS_PYTHON_VERSION == '2.6' ]]; then pip install unittest2; fi
+script: nosetests
+env:
+  global:
+    - TEST_MSTRANSLATOR_SUBSCRIPTION_KEY=2defb6d59d0e4f7a807712ba24d5d5d6

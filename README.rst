@@ -17,7 +17,7 @@ Install with pip:
 
 .. code-block:: console
 
-    $ pip install mstranslator
+    $ pip install git+https://github.com/djm96/ms-nn-translator.git
 
 Usage
 =====
